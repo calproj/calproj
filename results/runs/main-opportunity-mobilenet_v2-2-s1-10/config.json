@@ -1,0 +1,192 @@
+{
+ "argv": [
+  "scripts/run_adapt.py",
+  "--dataset",
+  "opportunity",
+  "--backbone",
+  "mobilenet_v2",
+  "--targets",
+  "2",
+  "--seeds",
+  "1-10",
+  "--ranks",
+  "2",
+  "4",
+  "8",
+  "--eval-steps",
+  "50",
+  "--variants",
+  "gauss",
+  "gauss-unit",
+  "orth",
+  "orth-norm",
+  "signs",
+  "select-norm",
+  "select",
+  "select-top-src",
+  "pca-src",
+  "pca-tgt",
+  "grad",
+  "pca-tgt-nomean",
+  "gauss-balanced",
+  "gauss-nomean-keep",
+  "gauss-nomean",
+  "cal",
+  "cal-src",
+  "signs-cal",
+  "select-cal",
+  "gauss-bias",
+  "cal-bias",
+  "sg",
+  "sg-nomean",
+  "sg-cal",
+  "--run-dir=out/runs/main-opportunity-mobilenet_v2-2-s1-10"
+ ],
+ "cli": {
+  "backbone": "mobilenet_v2",
+  "beta2": 0.999,
+  "cache_dir": null,
+  "data_root": "data",
+  "dataset": "opportunity",
+  "eval_steps": [
+   50
+  ],
+  "lrs": null,
+  "n_source_cal": 1024,
+  "ranks": [
+   2,
+   4,
+   8
+  ],
+  "run_dir": "out/runs/main-opportunity-mobilenet_v2-2-s1-10",
+  "seeds": [
+   "1-10"
+  ],
+  "source_dir": "out/source",
+  "source_seed": "1",
+  "targets": [
+   "2"
+  ],
+  "variants": [
+   "gauss",
+   "gauss-unit",
+   "orth",
+   "orth-norm",
+   "signs",
+   "select-norm",
+   "select",
+   "select-top-src",
+   "pca-src",
+   "pca-tgt",
+   "grad",
+   "pca-tgt-nomean",
+   "gauss-balanced",
+   "gauss-nomean-keep",
+   "gauss-nomean",
+   "cal",
+   "cal-src",
+   "signs-cal",
+   "select-cal",
+   "gauss-bias",
+   "cal-bias",
+   "sg",
+   "sg-nomean",
+   "sg-cal"
+  ]
+ },
+ "lrs": [
+  0.001
+ ],
+ "oversample": 8,
+ "protocol": {
+  "adabn_calib_batches": 1,
+  "adabn_calibration_mode": "ema_no_reset",
+  "adabn_stat_source": [
+   "target"
+  ],
+  "adapt_eval_every_steps": 50,
+  "adapt_lr": 0.001,
+  "adapt_weight_decay": 0.0005,
+  "adapter_layers": "pointwise_only",
+  "backbone": "mobilenet_v2",
+  "batch_size": 64,
+  "batch_size_values": [
+   64
+  ],
+  "bnpa_bottleneck_bn": "on",
+  "bnpa_sg_p_lr": [
+   "1e-2"
+  ],
+  "bnpa_sg_p_optimizer": [
+   "adam"
+  ],
+  "bnpa_sg_p_update_every": [
+   "1"
+  ],
+  "bnpa_sg_p_warmup_steps": [
+   "0"
+  ],
+  "bnpa_sg_p_weight_decay": [
+   "0"
+  ],
+  "bnpa_sg_renorm_p": [
+   "none"
+  ],
+  "data_root": "data/opportunity",
+  "dataset": "opportunity",
+  "expected_input_channels": 97,
+  "expected_num_classes": 17,
+  "full_adapt_lr": 0.001,
+  "label_column": "ml_both_arms",
+  "method": "bnpa_fa_postbn_bnr_off_scaled",
+  "mobilenet_v2_pretrained": true,
+  "pretrain_epochs": 20,
+  "pretrain_lr": 0.001,
+  "pretrain_weight_decay": 0.0005,
+  "profile_full_sram": false,
+  "profile_performance": false,
+  "profile_time_spec": false,
+  "proj_init": "random",
+  "rank": 2,
+  "realdisp_feature_set": "imu13",
+  "realworld_feature_set": "imu9",
+  "realworld_split_strategy": "chronological",
+  "results_root": "experiments/results/minimal_ZO_experiments",
+  "reuse_first_source_model": true,
+  "runtime_mode": "reference",
+  "seed": [
+   "1"
+  ],
+  "source_scenario": "ideal",
+  "steps_adapt": [
+   50
+  ],
+  "t_resnet_feature_maps": 64,
+  "target_locations": null,
+  "target_scenario": "self",
+  "target_subjects": [
+   "all"
+  ],
+  "train_mode_adabn": [
+   "off"
+  ],
+  "width_mult": 1.0,
+  "window_label_rule": "majority",
+  "window_size": 60,
+  "window_stride": 30
+ },
+ "seeds": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10
+ ],
+ "sketch_factor": 2,
+ "upstream_commit": "1efcf1ff0c55a7ddcda07e3b1b684452e1bcbd7d"
+}

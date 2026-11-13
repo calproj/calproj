@@ -1,0 +1,15 @@
+\begin{tabular}{@{}l cccccc@{}}
+\toprule
+ & \multicolumn{6}{c}{Adaptation steps} \\
+\cmidrule(l){2-7}
+Projection & 5 & 10 & 20 & 50 & 100 & 250 \\
+\midrule
+Gaussian (MemFLoRA) & 0.667 & 0.709 & 0.763 & 0.824 & 0.855 & 0.879 \\
+\midrule
+Calibrated & $+0.022$ & $+0.018$ & $+0.012$ & $+0.011$ & $+0.007$ & $+0.002$ \\
+Channels, balanced & $+0.004$ & $+0.004$ & $+0.003$ & $+0.003$ & $+0.001$ & $-0.002$ \\
+Principal, source data & $+0.001$ & $-0.003$ & $-0.005$ & $-0.010$ & $-0.011$ & $-0.009$ \\
+Replay (MemFLoRA-SG) & $+0.013$ & $+0.015$ & $+0.013$ & $+0.013$ & $+0.011$ & $+0.007$ \\
+Calibrated, replay & $+0.024$ & $+0.020$ & $+0.017$ & $+0.017$ & $+0.013$ & $+0.006$ \\
+\botrule
+\end{tabular}

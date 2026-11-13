@@ -1,0 +1,15 @@
+\begin{tabular}{@{}l cccccc c@{}}
+\toprule
+Projection & Opp./T & Opp./M & RD/T & RD/M & RW/T & RW/M & All \\
+\midrule
+Gaussian (MemFLoRA) & 0.778 & 0.750 & 0.795 & 0.899 & 0.867 & 0.887 & 0.829 \\
+\midrule
+Orthogonal, matched norm & $-0.003$ & $0.000$ & $-0.002$ & $-0.002$ & $-0.001$ & $+0.001$ & $0.000$\,{\scriptsize$\pm$\,0.001} \\
+Principal, source data & $-0.014$ & $-0.004$ & $-0.033$ & $-0.003$ & $-0.008$ & $-0.005$ & $-0.009$\,{\scriptsize$\pm$\,0.010} \\
+Channels, balanced & $-0.005$ & $+0.004$ & $+0.001$ & $+0.004$ & $-0.001$ & $+0.001$ & $+0.002$\,{\scriptsize$\pm$\,0.013} \\
+Calibrated, target batch & $+0.006$ & $+0.019$ & $+0.015$ & $+0.008$ & $+0.004$ & $+0.005$ & $+0.010$\,{\scriptsize$\pm$\,0.006} \\
+Calibrated, source data & $+0.007$ & $+0.016$ & $+0.011$ & $+0.009$ & $+0.004$ & $+0.004$ & $+0.009$\,{\scriptsize$\pm$\,0.004} \\
+Replay (MemFLoRA-SG) & $+0.009$ & $+0.015$ & $+0.028$ & $+0.005$ & $+0.010$ & $+0.008$ & $+0.013$\,{\scriptsize$\pm$\,0.006} \\
+Calibrated, replay & $+0.015$ & $+0.016$ & $+0.030$ & $+0.006$ & $+0.013$ & $+0.010$ & $+0.015$\,{\scriptsize$\pm$\,0.008} \\
+\botrule
+\end{tabular}

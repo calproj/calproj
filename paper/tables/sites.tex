@@ -1,0 +1,11 @@
+\begin{tabular}{@{}llc cc cc@{}}
+\toprule
+ & & & \multicolumn{2}{c}{Input energy} & \multicolumn{2}{c}{Gradient energy} \\
+\cmidrule(lr){4-5}\cmidrule(l){6-7}
+Backbone & Input of the site & Sites & range & mean & range & mean \\
+\midrule
+T-ResNet & all sites & 11 & 0.05 to 0.37 & 0.23 & 0.27 to 0.68 & 0.53 \\
+MobileNetV2 & after a rectifier & 17 & 0.33 to 0.72 & 0.50 & 0.57 to 0.87 & 0.74 \\
+ & after a linear bottleneck & 17 & 0.01 to 0.08 & 0.05 & 0.10 to 0.28 & 0.17 \\
+\botrule
+\end{tabular}

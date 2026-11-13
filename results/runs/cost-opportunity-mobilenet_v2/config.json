@@ -1,0 +1,54 @@
+{
+ "argv": [
+  "scripts/profile_cost.py",
+  "--dataset",
+  "opportunity",
+  "--backbone",
+  "mobilenet_v2",
+  "--variants",
+  "gauss",
+  "cal",
+  "signs",
+  "select",
+  "pca-src",
+  "sg",
+  "--ranks",
+  "2",
+  "4",
+  "8",
+  "--batches",
+  "1",
+  "8",
+  "32",
+  "64",
+  "--run-dir=out/runs/cost-opportunity-mobilenet_v2"
+ ],
+ "cli": {
+  "backbone": "mobilenet_v2",
+  "batches": [
+   1,
+   8,
+   32,
+   64
+  ],
+  "cache_dir": null,
+  "data_root": "data",
+  "dataset": "opportunity",
+  "n_source_cal": 1024,
+  "ranks": [
+   2,
+   4,
+   8
+  ],
+  "run_dir": "out/runs/cost-opportunity-mobilenet_v2",
+  "source_dir": "out/source",
+  "variants": [
+   "gauss",
+   "cal",
+   "signs",
+   "select",
+   "pca-src",
+   "sg"
+  ]
+ }
+}

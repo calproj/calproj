@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calproj"
+version = "0.1.0"
+description = "Calibrated projections for memory-floor low-rank adaptation of CNNs on edge devices"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    # the versions the shipped results were produced with
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    # the three pins of the MemFLoRA release (third_party/memflora/pyproject.toml)
+    "numpy==2.4.6",
+    "scikit-learn==1.8.0",
+    "pillow==12.2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "matplotlib>=3.9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: longer than a few seconds on a laptop CPU",
+    "gpu: needs a CUDA device",
+]

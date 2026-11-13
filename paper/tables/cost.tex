@@ -1,0 +1,21 @@
+\begin{tabular}{@{}ll ccc c c c@{}}
+\toprule
+ & & \multicolumn{3}{c}{Saved state [MB]} & Peak & Step & Stored \\
+\cmidrule(lr){3-5}
+Backbone & Projection & bottleneck & masks & total & [MB] & [GMAC] & [kB] \\
+\midrule
+T-ResNet & Gaussian & 0.37 & 0.46 & 0.83 & 3.23 & 4.41 & 0.0 \\
+ & Calibrated & 0.37 & 0.46 & 0.83 & 3.23 & 4.41 & 0.2 \\
+ & Random signs & 0.37 & 0.46 & 0.83 & 3.23 & 4.41 & 0.0 \\
+ & Random channels & 0.37 & 0.46 & 0.83 & 3.23 & 4.39 & 0.0 \\
+ & Principal subspace & 0.37 & 0.46 & 0.83 & 3.23 & 4.41 & 8.7 \\
+ & Gaussian, replay & 0.37 & 0.46 & 0.83 & 5.01 & 6.59 & 0.0 \\
+\midrule
+MobileNetV2 & Gaussian & 2.84 & 5.50 & 8.40 & 17.83 & 5.66 & 0.0 \\
+ & Calibrated & 2.84 & 5.50 & 8.40 & 17.83 & 5.66 & 0.5 \\
+ & Random signs & 2.84 & 5.50 & 8.40 & 17.83 & 5.66 & 0.0 \\
+ & Random channels & 2.84 & 5.50 & 8.40 & 17.83 & 5.57 & 0.0 \\
+ & Principal subspace & 2.84 & 5.50 & 8.40 & 17.83 & 5.66 & 69.1 \\
+ & Gaussian, replay & 2.84 & 5.50 & 8.40 & 26.30 & 8.46 & 0.0 \\
+\botrule
+\end{tabular}

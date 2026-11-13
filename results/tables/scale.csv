@@ -1,0 +1,7 @@
+dataset,backbone,gauss,orth_norm,orth,gauss_unit,orth_norm_minus_gauss,half_width,gauss_unit_minus_orth,half_width_unit
+opportunity,t_resnet,0.7875,0.7869,0.7203,0.7203,-0.0005,0.0023,-0.0,0.0022
+opportunity,mobilenet_v2,0.7519,0.7517,0.6911,0.6908,-0.0001,0.0015,-0.0003,0.0015
+realdisp,t_resnet,0.774,0.7747,0.6777,0.6749,0.0006,0.0043,-0.0028,0.0036
+realdisp,mobilenet_v2,0.8967,0.8973,0.8824,0.8821,0.0005,0.002,-0.0003,0.0013
+realworld,t_resnet,0.8586,0.8603,0.7812,0.7776,0.0017,0.0018,-0.0036,0.0022
+realworld,mobilenet_v2,0.8828,0.8833,0.8266,0.8258,0.0004,0.0009,-0.0008,0.0009

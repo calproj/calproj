@@ -1,0 +1,16 @@
+\begin{tabular}{@{}ll cc cc cc@{}}
+\toprule
+ & & \multicolumn{2}{c}{Row norm $\sqrt{C/r}$} & \multicolumn{2}{c}{Row norm 1} & \multicolumn{2}{c}{Difference at equal norm} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(l){7-8}
+Dataset & Backbone & Gauss. & Orth. & Orth. & Gauss. & $\sqrt{C/r}$ & 1 \\
+\midrule
+Opportunity & T-ResNet & 0.787 & 0.787 & 0.720 & 0.720 & $-0.001$\,{\scriptsize$\pm$\,0.002} & $0.000$\,{\scriptsize$\pm$\,0.002} \\
+ & MobileNetV2 & 0.752 & 0.752 & 0.691 & 0.691 & $0.000$\,{\scriptsize$\pm$\,0.002} & $0.000$\,{\scriptsize$\pm$\,0.001} \\
+RealDisp & T-ResNet & 0.774 & 0.775 & 0.678 & 0.675 & $+0.001$\,{\scriptsize$\pm$\,0.004} & $-0.003$\,{\scriptsize$\pm$\,0.004} \\
+ & MobileNetV2 & 0.897 & 0.897 & 0.882 & 0.882 & $+0.001$\,{\scriptsize$\pm$\,0.002} & $0.000$\,{\scriptsize$\pm$\,0.001} \\
+RealWorld & T-ResNet & 0.859 & 0.860 & 0.781 & 0.778 & $+0.002$\,{\scriptsize$\pm$\,0.002} & $-0.004$\,{\scriptsize$\pm$\,0.002} \\
+ & MobileNetV2 & 0.883 & 0.883 & 0.827 & 0.826 & $0.000$\,{\scriptsize$\pm$\,0.001} & $-0.001$\,{\scriptsize$\pm$\,0.001} \\
+\midrule
+Mean &  & 0.825 & 0.826 & 0.763 & 0.762 & $0.000$\,{\scriptsize$\pm$\,0.001} & $-0.001$\,{\scriptsize$\pm$\,0.001} \\
+\botrule
+\end{tabular}

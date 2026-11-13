@@ -1,0 +1,20 @@
+\begin{tabular}{@{}l cccccc c@{}}
+\toprule
+Projection & Opp./T & Opp./M & RD/T & RD/M & RW/T & RW/M & All \\
+\midrule
+Gaussian (MemFLoRA) & 0.787 & 0.752 & 0.774 & 0.897 & 0.859 & 0.883 & 0.825 \\
+\midrule
+Balanced & $+0.002$ & $+0.003$ & $+0.003$ & $+0.002$ & $+0.004$ & $+0.002$ & $+0.003$\,{\scriptsize$\pm$\,0.000} \\
+Mean removed, scale kept & $-0.001$ & $+0.012$ & $+0.010$ & $+0.010$ & $-0.006$ & $0.000$ & $+0.004$\,{\scriptsize$\pm$\,0.001} \\
+Mean removed, rebalanced & $+0.007$ & $+0.020$ & $+0.022$ & $+0.009$ & $+0.007$ & $+0.006$ & $+0.012$\,{\scriptsize$\pm$\,0.001} \\
+Calibrated, target batch & $+0.007$ & $+0.020$ & $+0.019$ & $+0.007$ & $+0.008$ & $+0.006$ & $+0.011$\,{\scriptsize$\pm$\,0.001} \\
+Calibrated, source data & $+0.006$ & $+0.019$ & $+0.012$ & $+0.009$ & $+0.006$ & $+0.004$ & $+0.009$\,{\scriptsize$\pm$\,0.001} \\
+Calibrated random signs & $+0.006$ & $+0.019$ & $+0.019$ & $+0.007$ & $+0.008$ & $+0.007$ & $+0.011$\,{\scriptsize$\pm$\,0.001} \\
+Calibrated random channels & $+0.002$ & $+0.016$ & $+0.016$ & $+0.009$ & $+0.008$ & $+0.006$ & $+0.010$\,{\scriptsize$\pm$\,0.001} \\
+Gaussian, with a bias & $+0.001$ & $0.000$ & $0.000$ & $0.000$ & $+0.003$ & $0.000$ & $+0.001$\,{\scriptsize$\pm$\,0.000} \\
+Calibrated, with a bias & $+0.008$ & $+0.019$ & $+0.020$ & $+0.008$ & $+0.011$ & $+0.006$ & $+0.012$\,{\scriptsize$\pm$\,0.001} \\
+Replay (MemFLoRA-SG) & $+0.011$ & $+0.013$ & $+0.028$ & $+0.007$ & $+0.012$ & $+0.008$ & $+0.013$\,{\scriptsize$\pm$\,0.001} \\
+Mean removed, replay & $+0.016$ & $+0.017$ & $+0.038$ & $+0.006$ & $+0.017$ & $+0.012$ & $+0.017$\,{\scriptsize$\pm$\,0.001} \\
+Calibrated, replay & $+0.015$ & $+0.017$ & $+0.036$ & $+0.006$ & $+0.016$ & $+0.012$ & $+0.017$\,{\scriptsize$\pm$\,0.001} \\
+\botrule
+\end{tabular}
